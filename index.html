@@ -9,8 +9,28 @@
 </head>
 <body>
     <div class="container">
-        <div class="logo">My Library</div>
-        <button id="new-book">NEW BOOK</button>
+
+        <h1>My Library</h1>
+        <p>Hello! Welcome to your very own library! Here you can input all of your favorite books that you
+            have read or would like to read. To get started press the "New Book" button to add a book to your library...</p>
+        <div id="new-book-container">
+            <button id="new-book-button">New Book</button>
+        </div>
+
+        <div class="new-book-card">
+            <form id="form" action="/Script.js"></form>
+                <div id="textInput"> 
+                    <p><input type="text" id="title" name="title" placeholder="Title"></p>
+                    <p><input type="text" id="author" name="author" placeholder="Author"></p>
+                    <p><input type="text" id="pages" name="pages" placeholder="Pages"></p>
+                </div>
+                <div id="read">
+                    <p><label >Read: </label><input type="checkbox" id="read" name="read" value="yes"></p>
+                </div>
+                <button type="submit" form="form" id="add-button">Add</button>
+            </form>
+        </div>
+        
     </div>
 </body>
 </html>
