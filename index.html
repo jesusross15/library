@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Library</title>
     <link rel="stylesheet" href="styles.css">
-    <script type="text/javascript" src="script.js" defer></script>
+    
 </head>
 <body>
     <div class="container">
@@ -18,18 +18,43 @@
 
         <div class="new-book-card" style="display: none;">
             <form id="new-book-form">
+                <span class="close-form">&times;</span>
                 <div id="textInput"> 
-                    <p><input type="text" id="title" name="title" placeholder="Title"></p>
-                    <p><input type="text" id="author" name="author" placeholder="Author"></p>
-                    <p><input type="text" id="pages" name="pages" placeholder="Pages"></p>
+                    <p><input 
+                        type="text" 
+                        id="title" 
+                        name="title" 
+                        placeholder="Title"/>
+                    </p>
+                    <p><input 
+                        type="text" 
+                        id="author" 
+                        name="author" 
+                        placeholder="Author"/>
+                    </p>
+                    <p><input 
+                        type="text" 
+                        id="pages" 
+                        name="pages" 
+                        placeholder="Pages"/>
+                    </p>
                 </div>
                 <div id="read">
-                    <p><label >Read: </label><input type="checkbox" id="read" name="read" value="yes"></p>
+                    <p><label >Read: </label>
+                        <input 
+                        type="checkbox" 
+                        id="read" 
+                        name="read" 
+                        value="yes">
+                    </p>
                 </div>
                 <button type="submit" form="new-book-form" id="add-button">Add</button>
             </form>
         </div>
+
+        <div id="library-container"></div>
         
     </div>
+    <script type="text/javascript" src="script.js"></script>
 </body>
 </html>
